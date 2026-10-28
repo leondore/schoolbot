@@ -1,0 +1,3 @@
+# No personal data in the repo
+
+This repo is public, so configuration is split. Non-identifying settings (model names, confidence threshold, review policy, expiry, reminder hours, batching window) are committed as `wrangler.jsonc` vars. Everything identifying (Chats and their alternate JIDs, Children's names, Parents' Telegram IDs, the Review group ID, the calendar ID) lives in a single JSON Worker secret, `PRIVATE_CONFIG`, validated with Zod when read; its source file is git-ignored next to a committed `private-config.example.jsonc` that uses the placeholders from `docs/agents/issue-tracker.md`. The system prompt is a committed template with placeholder slots filled at runtime, and real flyers for evals stay in the git-ignored `testdata/`.

@@ -1,0 +1,3 @@
+# Our store is the source of truth; Google Calendar is a mirror
+
+School events, with their identity, live in our store (D1); each Calendar entry is a write-only mirror, and its Google ID is just a handle. The agent references existing School events by our short IDs, and an update or cancel whose ID doesn't exist gets a Warning instead of becoming a create. We never read Calendar back: updates patch only the fields that changed, so a Parent's hand edits to other fields survive, and a Calendar entry deleted by hand stays deleted (a later update shows a Warning instead of recreating it). Reminders read from our store, not from Calendar.
