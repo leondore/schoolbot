@@ -7,11 +7,11 @@ Turns the school's WhatsApp messages into calendar entries, saved media and remi
 ### The school
 
 **School event**:
-Something happening at school on a given date, as announced by the school: an act, a dress-up day, an exam, a day off.
+Something happening at school on a given date or span of dates, as announced by the school: an act, a dress-up day, an exam week, a holiday.
 _Avoid_: event (unqualified), activity
 
 **Parent task**:
-Something the school asks parents to do, send or buy for a School event ("👉 Padres: vestimenta rosa").
+Something the school asks parents to do for a School event ("👉 Padres: vestimenta rosa"): something to bring, to prepare or to buy, which sets how early its Reminder comes.
 _Avoid_: parent action
 
 **Efemérides**:
@@ -22,7 +22,7 @@ One of the family's children at the school.
 _Avoid_: kid, student, son, daughter
 
 **Audience**:
-The Children a School event concerns; everyone unless the school says otherwise.
+The Children a School event concerns, out of those the Chat concerns; all of them unless the school narrows it ("solo nivel inicial", "3ro B").
 
 **Chat**:
 An allowlisted WhatsApp chat the school uses to communicate, concerning one or more Children.
@@ -37,7 +37,7 @@ The Messages from one Chat that arrive close enough together to be understood as
 _Avoid_: burst, chunk
 
 **Follow-up**:
-Something the school said it will send later ("se enviará un listado…"), held open until a later Message fulfils it.
+Something the school said it will send later ("se enviará un listado…"), held open until a later Message fulfils it, or quietly dropped once it no longer matters (its School event has passed).
 _Avoid_: pending item, todo
 
 ### What schoolbot produces
